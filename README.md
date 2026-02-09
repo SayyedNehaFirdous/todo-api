@@ -29,18 +29,21 @@ http://localhost:8080/todos
 
 ## API Examples (PowerShell)
 
+### Get Todo
+
+```bash
+Invoke-RestMethod http://localhost:8080/todos
+```
+
+<img width="498" height="309" alt="image" src="https://github.com/user-attachments/assets/1c22cdc9-293c-4e99-a371-14ba7f365b12" />
+
+
 ### Create Todo
 
 ```bash
 Invoke-RestMethod -Uri http://localhost:8080/todos -Method POST -ContentType "application/json" -Body '{"title":"Learn Go","done":false}'
 ```
 
-
-### Get Todo
-
-```bash
-Invoke-RestMethod http://localhost:8080/todos
-```
 
 <img width="921" height="682" alt="image" src="https://github.com/user-attachments/assets/d83932a6-61b6-429e-ae38-a4dce9ae11b2" />
 
